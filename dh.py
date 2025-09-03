@@ -52,7 +52,13 @@ def clavesCorrectas() -> bool:
     else: 
         print("Fracaso, las claves son diferentes")
         return False
-
+        
+if __name__ == "__main__":
+    exito = clavesCorrectas()
+    if exito:
+        print("El intercambio de claves Diffie-Hellman fue exitoso ")
+    else:
+        print("El intercambio de claves Diffie-Hellman falló ")
 
 
 
